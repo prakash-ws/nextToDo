@@ -36,7 +36,7 @@ export default function Home() {
               Your Product Table{" "}
             </h2>
             <button className="button" onClick={() => toggleFormModal()}>
-              Add Product
+              Add  Product
             </button>
           </div>
           <div className="w-full">
