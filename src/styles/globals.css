@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0,0.1;
+    --background-end-rgb: 0, 0, 0,0.4;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background:
+      
+    rgb(var(--background-start-rgb))
+    
+}
+
+.button {
+  padding: 10px 17px;
+  font-size: 16px;
+  width: 145px;
+  background-color: rgb(8, 82, 119);
+  border-radius: 10px;
+  color: white;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
